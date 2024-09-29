@@ -29,7 +29,6 @@ export default class ApiService {
           language: 'en-US',
         },
       });
-      console.log(' Movie: ', response.data);
       return response.data;
     } catch (error) {
       console.log(error.message);

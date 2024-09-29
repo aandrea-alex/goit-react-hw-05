@@ -13,7 +13,6 @@ const HomePage = () => {
   const [loading, error, fetchItemData] = useFetchData(async () => {
     const responce = await ApiService.getTrends();
     setItems(responce);
-    console.log(responce);
   });
 
   const handleLoadList = () => {

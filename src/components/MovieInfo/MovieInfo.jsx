@@ -3,7 +3,14 @@ import { BASE_IMG_URL } from '../../api/constants';
 import styles from './MovieInfo.module.css';
 
 const MovieInfo = ({
-  item: { poster_path, original_title, overview, genres },
+  item: {
+    poster_path,
+    original_title,
+    overview,
+    genres,
+    vote_average,
+    vote_count,
+  },
 }) => {
   return (
     <div className={styles.section}>
@@ -16,10 +23,9 @@ const MovieInfo = ({
           />
         </div>
         <div className={styles.infoContainer}>
-          <h4 className={styles.title}>
-            {original_title}
-          </h4>
-          <p>User Score: 73%</p>
+          <h4 className={styles.title}>{original_title}</h4>
+          <p>Vote average: {vote_average}</p>
+          <p>Vote count: {vote_count}</p>
           <h5 className={styles.subtitle}>Overview</h5>
           <p>{overview}</p>
           <h5 className={styles.subtitle}>Genres:</h5>
