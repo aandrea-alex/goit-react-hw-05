@@ -1,0 +1,31 @@
+.section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.wrapper {
+  display: flex;
+  column-gap: 40px;
+}
+
+.imgContainer {
+  background: var(--accent-color);
+  padding: 20px;
+}
+.img {
+  width: 800px;
+  border: 8px solid var(--labels-color);
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+}
+.subtitle {
+  font-size: 20px;
+  font-weight: 500;
+}
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
