@@ -4,6 +4,9 @@ import AppContainer from '../../components/AppContainer/AppContainer';
 import AppSection from '../../components/AppSection/AppSection';
 import AppSecTitle from '../../components/AppSecTitle/AppSecTitle';
 import ApiService from '../../api/ApiService';
+import InfinityLoader from '../../components/Infinity/Infinity';
+import ErrorMessage from '../../components/ErrorMessage/ErrorMessage';
+import ItemsList from '../../components/ItemsList/ItemsList';
 
 const HomePage = () => {
   const [items, setItems] = useState([]);
@@ -25,6 +28,9 @@ const HomePage = () => {
     <AppContainer>
         <AppSection>
         <AppSecTitle>Trending today</AppSecTitle>
+        <InfinityLoader isLoading={loading} />
+        {error && <ErrorMessage />}
+        <ItemsList items={items}></ItemsList>
         </AppSection>
     </AppContainer>
   );

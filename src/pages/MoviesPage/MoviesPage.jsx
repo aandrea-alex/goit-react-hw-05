@@ -1,5 +1,6 @@
 
 import AppContainer from '../../components/AppContainer/AppContainer';
+// import InfinityLoader from '../../UI/loader/Infinity/Infinity';
 
 const MoviesPage = () => {
 
