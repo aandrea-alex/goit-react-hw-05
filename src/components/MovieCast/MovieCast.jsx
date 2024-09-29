@@ -26,7 +26,7 @@ const MovieCast = () => {
     <React.Fragment>
       <InfinityLoader isLoading={loading} />
       {error && <ErrorMessage />}
-      {items && <CastList items={items} />}
+      {items.length > 0 && <CastList items={items} />}
     </React.Fragment>
   );
 };

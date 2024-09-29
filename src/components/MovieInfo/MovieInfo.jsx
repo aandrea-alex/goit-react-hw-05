@@ -3,7 +3,7 @@ import { BASE_IMG_URL } from '../../api/constants';
 import styles from './MovieInfo.module.css';
 
 const MovieInfo = ({
-  item: { id, poster_path, original_title, overview, genres },
+  item: { poster_path, original_title, overview, genres },
 }) => {
   return (
     <div className={styles.section}>
@@ -18,7 +18,6 @@ const MovieInfo = ({
         <div className={styles.infoContainer}>
           <h4 className={styles.title}>
             {original_title}
-            {-id}
           </h4>
           <p>User Score: 73%</p>
           <h5 className={styles.subtitle}>Overview</h5>
