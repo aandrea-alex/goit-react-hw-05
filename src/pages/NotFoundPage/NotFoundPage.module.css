@@ -1,6 +1,12 @@
 .container {
   height: 200px;
   display: flex;
+  flex-direction: column;
+  gap:12px;
   justify-content: center;
   align-items: center;
+}
+
+.link{
+  color: var(--active-menu-color);
 }
