@@ -5,3 +5,5 @@ export const okNotify = msg => {
     duration: 700,
   });
 };
+
+export default okNotify;
